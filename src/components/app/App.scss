@@ -1,0 +1,184 @@
+@import '../../assets/scss/variables';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background: url('../../assets/images/background.svg') center center no-repeat;
+  background-size: cover;
+
+  .main-content__container {
+    display: flex;
+
+    .logo__mobile {
+      display: none;
+    }
+    .main-image__container {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .main-image {
+        position: absolute;
+        top: 0px;
+        height: 800px;
+        width: 330px;
+        background: url('../../assets/images/images-desktop/iphones-final.png') center center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .content__container {
+      padding-top: 164px;
+
+      .paragraph__container {
+
+        p {
+          color: $color-white;
+        }
+
+        .fist__paragraph {
+          font-family: 'segoe-light';
+          font-size: 48px;
+        }
+
+        .second__paragraph {
+          font-family: 'segoe-regular';
+          font-size: 24px;
+          color: $color-white-87;
+        }
+      }
+
+      .input__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 48px;
+
+        .input {
+          height: 53px;
+          width: 298px;
+          padding-left: 11px;
+          background-color: $color-white;
+          font-family: 'segoe-regular';
+          color: $color-cool-grey;
+          font-size: 16px;
+          border-radius: 8px 0px 0px 8px;
+          border: none;
+        }
+
+        button {
+          height: 55px;
+          width: 122px;
+          background-color: $color-tomato;
+          font-family: 'segoe-bold';
+          color: $color-white;
+          text-transform: uppercase;
+          font-size: 14px;
+          border-radius: 0px 8px 8px 0px;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .bottom__container {
+    background-color: $color-white;
+    height: 100%;
+    width: 100vw;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .App {
+    padding: 40px 20px 20px 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      height: 42px;
+      width: 132px;
+      padding-bottom: 9px;
+    }
+
+    .main-image__container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .main-image {
+        background: url('../../assets/images/images-mobile/phones-mobile.png') center center no-repeat;
+        padding-top: 20px;
+        background-size: contain;
+      }
+    }
+
+    .content__container {
+
+      .logo__desktop {
+        display: none;
+      }
+      .paragraph__container {
+
+        p {
+          color: $color-white;
+          text-align: center;
+        }
+
+        .fist__paragraph {
+          font-family: 'segoe-light';
+          font-size: 24px;
+        }
+
+        .second__paragraph {
+          font-family: 'segoe-regular';
+          font-size: 16px;
+        }
+      }
+
+      .input__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .input {
+          height: 43px;
+          width: 188px;
+          padding-left: 11px;
+          background-color: $color-white;
+          font-family: 'segoe-regular';
+          color: $color-cool-grey;
+          font-size: 16px;
+          border-radius: 8px 0px 0px 8px;
+          border: none;
+        }
+
+        button {
+          height: 45px;
+          width: 92px;
+          background-color: $color-tomato;
+          font-family: 'segoe-bold';
+          color: $color-white;
+          text-transform: uppercase;
+          font-size: 14px;
+          border-radius: 0px 8px 8px 0px;
+          border: none;
+        }
+      }
+
+      .bottom__container {
+        display: none;
+      }
+    }
+  }
+}
