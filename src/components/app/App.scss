@@ -11,7 +11,7 @@
   background-size: cover;
 
   .main-content__container {
-    padding: 40px 20px 20px 20px;
+    margin: 40px 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,8 +31,8 @@
       .main-image {
         height: 145px;
         width: 221px;
-        background: url('../../assets/images/images-mobile/phones-mobile.png') center center no-repeat;
         margin-top: 20px;
+        background: url('../../assets/images/images-mobile/phones-mobile.png') center center no-repeat;
         background-size: contain;
       }
     }
@@ -42,6 +42,7 @@
       .logo__desktop {
         display: none;
       }
+
       .paragraph__container {
         max-width: 280px;
 
@@ -75,10 +76,10 @@
           height: 43px;
           width: 188px;
           padding-left: 11px;
-          background-color: $color-white;
-          font-family: 'segoe-regular';
-          color: $color-cool-grey;
           font-size: 16px;
+          font-family: 'segoe-regular';
+          background-color: $color-white;
+          color: $color-cool-grey;
           border-radius: 8px 0px 0px 8px;
           border: none;
         }
@@ -87,10 +88,10 @@
           height: 45px;
           width: 92px;
           background-color: $color-tomato;
-          font-family: 'segoe-bold';
-          color: $color-white;
-          text-transform: uppercase;
           font-size: 14px;
+          font-family: 'segoe-bold';
+          text-transform: uppercase;
+          color: $color-white;
           border-radius: 0px 8px 8px 0px;
           border: none;
         }
@@ -106,17 +107,17 @@
 @media screen and (min-width: 935px) {
 
   .App {
-    position: relative;
-    padding: 0px 50px 0px 0px;
+    height: auto;
     background: url('../../assets/images/background.svg') no-repeat center center;
     background-size: cover;
 
     .main-content__container {
       max-width: 1160px;
+      margin: 0;
       padding: 0;
+      position: relative;
       align-items: initial;
       flex-direction: row;
-      z-index: 1;
 
       .logo__mobile {
         display: none;
@@ -126,6 +127,7 @@
         height: 100%;
         width: 100%;
         padding-top: 75px;
+        z-index: 1;
 
         .main-image {
           height: 660px;
@@ -182,7 +184,7 @@
     }
 
     .bottom__container {
-      height: 115px;
+      height: 8%;
       width: 100vw;
       position: absolute;
       bottom: 0;
